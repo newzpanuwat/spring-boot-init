@@ -7,16 +7,16 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.UserData;
+import com.example.demo.model.User;
 
 @RestController
 public class UserController {
 
-  List<UserData> users = new ArrayList<>(Arrays.asList(
-      new UserData(1, "XOXO Lipstick", "aaa")));
+  List<User> users = new ArrayList<>(Arrays.asList(
+      new User(1, "XOXO Lipstick", "aaa", "BAY")));
 
-  @RequestMapping("/users")
-  public List<UserData> getUsers() {
+  @RequestMapping("api/v1/users")
+  public List<User> getUsers() {
     return users;
   }
 }

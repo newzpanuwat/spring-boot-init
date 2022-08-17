@@ -5,7 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @ToString
-public class UserData {
+public class User {
   @Getter
   @Setter
   public int userId;
@@ -15,10 +15,14 @@ public class UserData {
   @Getter
   @Setter
   public String password;
+  @Getter
+  @Setter
+  public String brand;
 
-  public UserData(int userId, String username, String password) {
+  public User(int userId, String username, String password, String brand) {
     this.userId = userId;
     this.username = username;
     this.password = password;
+    this.brand = brand;
   }
 }
