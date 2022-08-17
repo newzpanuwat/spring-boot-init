@@ -1,0 +1,14 @@
+version: "3"
+services:
+  spring-boot-app:
+    image: springio/gs-spring-boot-docker:latest
+    container_name: "spring-boot-app"
+    ports:
+      - 8081:8080
+  
+  next-app:
+    image: next-container:latest
+    container_name: "next-container"
+    ports:
+      - 3001:3000
+  

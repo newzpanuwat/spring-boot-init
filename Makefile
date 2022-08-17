@@ -10,6 +10,9 @@ clean:
 build:
 	docker build -t springio/gs-spring-boot-docker .
 
+stop:
+	docker rm -f next-container spring-boot-app
+
 start:
 	docker run -p 8081:8080 -t -d --name spring-boot-app springio/gs-spring-boot-docker
 

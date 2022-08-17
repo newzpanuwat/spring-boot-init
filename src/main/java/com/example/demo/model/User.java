@@ -17,12 +17,12 @@ public class User {
   public String password;
   @Getter
   @Setter
-  public String brand;
+  public String partnerName;
 
-  public User(int userId, String username, String password, String brand) {
+  public User(int userId, String username, String password, String partnerName) {
     this.userId = userId;
     this.username = username;
     this.password = password;
-    this.brand = brand;
+    this.partnerName = partnerName;
   }
 }
