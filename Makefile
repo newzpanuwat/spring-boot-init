@@ -8,13 +8,13 @@ clean:
 	./mvnw clean install
 
 build:
-	docker build -t springio/gs-spring-boot-docker .
+	docker build -t demo-spring .
 
 stop:
 	docker rm -f next-container spring-boot-app
 
 start:
-	docker run -p 8081:8080 -t -d --name spring-boot-app springio/gs-spring-boot-docker
+	docker run -p 8081:8080 -t -d --name spring-boot-app demo-spring
 
 rebuild:
-	docker build  --no-cache -t springio/gs-spring-boot-docker .
+	docker build  --no-cache -t demo-spring .

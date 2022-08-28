@@ -14,13 +14,6 @@ import com.example.demo.model.User;
 @RestController
 public class UserController {
 
-  // IUser userService;
-
-  // @Autowired
-  // public UserController(IUser userService) {
-  // this.userService = userService;
-  // }
-
   List<User> users = new ArrayList<>(Arrays.asList(
       new User("BAY")));
 
